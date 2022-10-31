@@ -1,0 +1,148 @@
+﻿body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    .stripe {
+
+
+        > div {
+            width: 30vw;
+            min-width: 500px;
+            align-self: center;
+            box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1), 0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+            border-radius: 7px;
+            padding: 40px;
+            margin: auto;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        &-image {
+            text-align: center;
+            margin-bottom:20px;
+
+            svg {
+                width: 200px;
+            }
+        }
+
+        &-form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &._hidden{
+                display:none;
+            }
+        }
+
+        &-card {
+            display: block;
+            width: 100%;
+            padding: 0.52rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+        &-amount, &-customer {
+            margin-bottom: 20px;
+            position: relative;
+
+            input {
+              
+                border-radius: 6px;
+                margin-bottom: 6px;
+                padding: 12px;
+                border: 1px solid rgba(50, 50, 93, 0.1);
+                height: 44px;
+                font-size: 16px;
+                width: 100%;
+                background: white;
+               
+                &::placeholder {
+                    font-size: .7em;
+                }
+            }
+
+            span {
+                font-size: .9em;
+                color: #ff0000;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        &-amount {
+            display: flex;
+        }
+
+        &-submit {
+            text-align: center;
+
+            &-button {
+                background: rgba(84,105,212,.6);
+                color: #ffffff;
+                font-family: Arial, sans-serif;
+                border-radius: 0 0 4px 4px;
+                border: 0;
+                padding: 12px 16px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                display: block;
+                transition: all 0.2s ease;
+                box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+                &._submitted{
+                    display:none;
+                }
+                &:hover {
+                    background: rgba(84,105,212,1);
+                }
+
+                &.hide {
+                    display: none;
+                }
+            }
+        }
+
+        .error, &-message {
+            color: #ff0000;
+            text-align: center;
+            font-size: 13px;
+            line-height: 17px;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        &-message {
+            color: #e59f77;
+
+            &.hidden {
+                 display: none;
+            }
+        }
+    }
+
+    @media only screen and (min-width:800px) {
+        .stripe {
+            &-form {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+}

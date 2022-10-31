@@ -1,0 +1,32 @@
+{
+  "builds": [
+    {
+      "name": "dev",
+      "js": {
+        "minify": true,
+        
+        "sourceMap": false,
+        "declaration": false,
+        "webClean": true
+        
+      }
+    }
+  ],
+
+  "files": [
+    {
+      "input": "src/index.less",
+      "output": "Pages/Index.razor.css"
+    },
+    {
+      "output": "Pages/StripeCSharpe.razor.css",
+      "input": "src/StripeCSharpe.less"
+    },
+    {
+      "output": "pages/index.razor.js",
+      "input": "pages/index.razor.ts"
+    }
+   
+  ]
+
+}

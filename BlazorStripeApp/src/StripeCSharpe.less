@@ -1,0 +1,98 @@
+﻿body {
+    .form {
+        > div {
+            max-width: 400px;
+            margin: auto;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        &-image {
+            text-align: center;
+            margin-bottom: 30px;
+
+            svg {
+                max-width: 200px;
+            }
+        }
+
+        &-inputs {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            flex-direction: column;
+
+            .date {
+                display: flex;
+
+                input {
+                    width: 30%;
+                    background-color: transparent;
+                }
+            }
+
+            .cvc {
+                width: 15%;
+            }
+        }
+
+        &-input {
+            width: 34%;
+            margin-bottom: 20px;
+            text-align: center;
+
+            input {
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                font-size: .9em;
+                color: #5f0909;
+                padding: 5px;
+                cursor: text;
+                font-family: sans-serif;
+                margin: 0;
+
+                &::placeholder {
+                    font-size: .8em;
+                }
+            }
+
+            span {
+                margin: 0;
+                padding: 5px;
+                font-size: 1.1em;
+            }
+        }
+
+        &-button {
+            text-align: center;
+
+            button {
+                text-align: center;
+                border-radius: 5px;
+                letter-spacing: .5em;
+                border: none;
+                font-size: .9em;
+                color: #fff;
+                padding: 5px 20px;
+                background-color: #bcb3b3;
+
+                &:hover {
+                    background-color: #f17c7c;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width:500px) {
+        .form {
+            &-inputs {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

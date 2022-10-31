@@ -1,0 +1,78 @@
+body .form > div {
+  max-width: 400px;
+  margin: auto;
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+body .form-image {
+  text-align: center;
+  margin-bottom: 30px;
+}
+body .form-image svg {
+  max-width: 200px;
+}
+body .form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+body .form-inputs .date {
+  display: flex;
+}
+body .form-inputs .date input {
+  width: 30%;
+  background-color: transparent;
+}
+body .form-inputs .cvc {
+  width: 15%;
+}
+body .form-input {
+  width: 34%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+body .form-input input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  color: #5f0909;
+  padding: 5px;
+  cursor: text;
+  font-family: sans-serif;
+  margin: 0;
+}
+body .form-input input::placeholder {
+  font-size: 0.8em;
+}
+body .form-input span {
+  margin: 0;
+  padding: 5px;
+  font-size: 1.1em;
+}
+body .form-button {
+  text-align: center;
+}
+body .form-button button {
+  text-align: center;
+  border-radius: 5px;
+  letter-spacing: 0.5em;
+  border: none;
+  font-size: 0.9em;
+  color: #fff;
+  padding: 5px 20px;
+  background-color: #bcb3b3;
+}
+body .form-button button:hover {
+  background-color: #f17c7c;
+}
+@media only screen and (min-width: 500px) {
+  body .form-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
